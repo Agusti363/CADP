@@ -1,0 +1,73 @@
+
+program practica1 problema 8;
+var
+a,b,c:char;
+uno,dos,tres:integer;
+begin
+uno:=0; dos:=0; tres:=0;
+  writeln ('Ingrese tres caracteres ');
+  readln(a);  readln(b);  readln(c);
+  //compara a
+  if (a='a')then begin
+        a:='a';
+        uno:=1;
+  end else if (a='e') then begin
+        a:='e';
+        uno:=1;
+  end else if (a='i')then  begin
+        a:='i';
+        uno:=1;
+  end else if (a='o')then   begin
+        a:='o';
+        uno:=1;
+  end else if (a='u')then   begin
+        a:='u';
+        uno:=1;
+  end;
+        
+ 
+// compara b 
+if (b='a')then begin
+        b:='a';
+        dos:=1;
+  end else if (b='e') then begin
+        b:='e';
+        dos:=1;
+  end else if (b='i')then  begin
+        b:='i';
+        dos:=1;
+  end else if (b='o')then   begin
+        b:='o';
+        dos:=1;
+  end else if (b='u')then   begin
+        b:='u';
+        dos:=1;
+  end;
+ 
+//compara c
+if (c='a')then begin
+        c:='a';
+        tres:=1;
+  end else if (c='e') then begin
+        c:='e';
+        tres:=1;
+  end else if (c='i')then  begin
+        c:='i';
+        tres:=1;
+  end else if (c='o')then   begin
+        c:='o';
+        tres:=1;
+  end else if (c='u')then   begin
+        c:='u';
+        tres:=1;
+  end;
+if(uno=1)and(dos=1)and(tres=1) then begin 
+    writeln('los tres eran vocales');
+ end else if (a='a')or(a='e')or(a='i')or(a='o')or(a='u')and(b='a')or(b='e')or(b='i')or(b='o')or(b='u')and(c='a')or(c='e')or(c='i')or(c='o')or(c='u')then begin
+    writeln('almenos una era vocal ',a,b,c,uno,dos,tres);
+end;
+  
+end.
+ 
+
+
